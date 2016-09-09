@@ -1,0 +1,23 @@
+{
+  "name": "routing",
+  "version": "1.0.0",
+  "description": "routing angular",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tolyaganzin/routing.git"
+  },
+  "keywords": [
+    "routing",
+    "angular"
+  ],
+  "author": "tolyaganzin",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/tolyaganzin/routing/issues"
+  },
+  "homepage": "https://github.com/tolyaganzin/routing#readme"
+}
