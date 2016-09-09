@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="routingApp">
   <head>
     <meta charset="utf-8">
     <title>routing</title>
 
     <!-- jquery -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
-    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
     <!-- material-design-lite -->
-    <link rel="stylesheet" href="/bower_components/material-design-lite/material.css">
-    <script src="/bower_components/material-design-lite/material.js"></script>
+    <link rel="stylesheet" href="bower_components/material-design-lite/material.css">
+    <script src="bower_components/material-design-lite/material.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- angular -->
@@ -25,8 +25,12 @@
     <script src="app.module.js"></script>
     <script src="app.config.js"></script>
 
+    <script src="routing-main/routing-main.module.js"></script>
+    <script src="routing-main/routing-main.component.js"></script>
+
   </head>
   <body>
-    routing
+    <h1>routing</h1>
+    <div ng-view></div>
   </body>
 </html>
