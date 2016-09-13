@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/tolyaganzin/routing/issues"
   },
-  "homepage": "https://github.com/tolyaganzin/routing#readme"
+  "homepage": "https://github.com/tolyaganzin/routing#readme",
+  "dependencies": {
+    "angular-ui-router": "^1.0.0-beta.2"
+  }
 }
