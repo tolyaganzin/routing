@@ -1,6 +1,7 @@
 'use strict';
 
 angular.module('routingApp',[
-  'ngRoute',
+  'ui.router',
+  // 'ngRoute',
   'mainPage'
 ]);

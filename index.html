@@ -21,7 +21,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
 
     <!-- ui router -->
-    <script src="node_modules/angular-ui-router/commonjs/router.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
 
     <!-- my project -->
     <!-- routing models -->
@@ -29,10 +29,12 @@
     <script src="app.config.js"></script>
 
     <script src="routing-main/routing-main.module.js"></script>
-    <script src="routing-main/routing-main.component.js"></script>
+    <script src="routing-main/routing-main.controller.js"></script>
 
   </head>
   <body>
-    <div class="container-fluid" ng-view></div>
+    <div class="container-fluid" >
+      <div ui-view></div>
+    </div>
   </body>
 </html>
