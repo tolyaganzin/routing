@@ -13,7 +13,7 @@ angular.
           views: {
               '': {templateUrl: 'template.html'},
               'content@home': {
-                templateUrl: 'routing-main/main-view.html',
+                templateUrl: 'routing-main/main-page.view.html',
                 controller: 'MainPageController',
                 controllerAs: 'main'
               }
@@ -23,12 +23,19 @@ angular.
           url:'/sub',
           views: {
             'content@home': {
-              templateUrl: 'routing-sub-page/routing-sub-page.template.html',
+              templateUrl: 'routing-sub-page/sub-page.view.html',
               controller: 'SubPageController',
               controllerAs: 'sub'
             }
           }
-        });
+        })
+        .state('about', {
+          url: '/about',
+          views: {
+            '':{templateUrl: 'template.html'},
+            'content@about': {templateUrl: 'routing-about/about.view.html'}
+          }
+        })
     });
 
 
