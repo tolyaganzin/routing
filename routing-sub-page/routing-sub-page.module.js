@@ -1,4 +1,4 @@
 'use strict';
 
-// Define the `supPage` module
-angular.module('supPage', []);
+// Define the `subPage` module
+angular.module('subPage', []);

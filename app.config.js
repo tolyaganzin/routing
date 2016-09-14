@@ -5,16 +5,28 @@ angular.
   module('routingApp').
     config(function ($stateProvider, $urlRouterProvider) {
       // $stateProvider.hashPrefix('!');
-      $urlRouterProvider.otherwise('/main-page');
+      $urlRouterProvider.otherwise('/home');
 
       $stateProvider
-        .state('main-page',{
-          url: '/main-page',
+        .state('home',{
+          url: '/home',
           views: {
-              '': {
-                templateUrl: 'routing-main/routing-main.template.html',
-                controller: 'MainPageController'
+              '': {templateUrl: 'template.html'},
+              'content@home': {
+                templateUrl: 'routing-main/main-view.html',
+                controller: 'MainPageController',
+                controllerAs: 'main'
               }
+          }
+        })
+        .state('home.sub',{
+          url:'/sub',
+          views: {
+            'content@home': {
+              templateUrl: 'routing-sub-page/routing-sub-page.template.html',
+              controller: 'SubPageController',
+              controllerAs: 'sub'
+            }
           }
         });
     });
