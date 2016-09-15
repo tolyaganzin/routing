@@ -3,13 +3,13 @@
 
 angular.
   module('routingApp').
-    config(function ($stateProvider, $urlRouterProvider) {
-      // $stateProvider.hashPrefix('!');
-      $urlRouterProvider.otherwise('/home');
+    config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+      $urlRouterProvider.otherwise('/error');
+      $locationProvider.html5Mode(true);
 
       $stateProvider
         .state('home',{
-          url: '/home',
+          url: '/',
           views: {
               '': {templateUrl: 'template.html'},
               'content@home': {
@@ -20,7 +20,7 @@ angular.
           }
         })
         .state('home.sub',{
-          url:'/sub',
+          url:'main/sub',
           views: {
             'content@home': {
               templateUrl: 'routing-sub-page/sub-page.view.html',
@@ -36,6 +36,18 @@ angular.
             'content@about': {templateUrl: 'routing-about/about.view.html'}
           }
         })
+        .state('error',{
+          url: '/error',
+          views: {
+            '':{templateUrl: 'template.html'},
+            'content@error': {
+              template:'<h1>404</h1>'+
+              '<a ui-sref="home"class="btn btn-block mdl-button mdl-js-button mdl-js-ripple-effect">home</a>'
+            }
+          }
+
+        });
+
     });
 
 

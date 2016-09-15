@@ -6,3 +6,6 @@ angular.module('routingApp',[
   'subPage',
   'mainPage'
 ]);
+// angular.module('routingApp').run(function ($browser) {
+//     $browser.baseHref = function () { return "/" };
+//   });
