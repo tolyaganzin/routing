@@ -41,8 +41,7 @@ angular.
           views: {
             '':{templateUrl: 'template.html'},
             'content@error': {
-              template:'<h1>404</h1>'+
-              '<a ui-sref="home"class="btn btn-block mdl-button mdl-js-button mdl-js-ripple-effect">home</a>'
+              template:'<h1 class="text-info">404 not found</h1>'
             }
           }
 
