@@ -1,0 +1,27 @@
+{
+  "name": "routing",
+  "description": "routing angular",
+  "main": "index.html",
+  "authors": [
+    "tolyaganzin"
+  ],
+  "license": "UNLICENSED",
+  "keywords": [
+    "routing",
+    "angular"
+  ],
+  "homepage": "https://github.com/tolyaganzin/routing",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.8",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0",
+    "material-design-lite": "^1.2.1"
+  }
+}

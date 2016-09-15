@@ -4,7 +4,7 @@
 angular.
   module('routingApp').
     config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
-      $urlRouterProvider.otherwise('/error');
+
       $locationProvider.html5Mode(true);
 
       $stateProvider
@@ -47,6 +47,7 @@ angular.
           }
 
         });
+      $urlRouterProvider.otherwise('/error');
 
     });
 
