@@ -20,7 +20,7 @@ angular.
           }
         })
         .state('home.sub',{
-          url:'main/sub',
+          url:'home/sub',
           views: {
             'content@home': {
               templateUrl: 'routing-sub-page/sub-page.view.html',
