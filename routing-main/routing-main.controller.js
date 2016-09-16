@@ -6,8 +6,7 @@ angular.
   module('mainPage').
   controller('MainPageController', [
     function () {
-      var mainPage = this;
-      mainPage.name="home";
+     this.name="home";
   }]);
 
 
