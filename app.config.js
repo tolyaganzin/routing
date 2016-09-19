@@ -33,7 +33,11 @@ angular.
           url: '/about',
           views: {
             '':{templateUrl: 'template.html'},
-            'content@about': {templateUrl: 'routing-about/about.view.html'}
+            'content@about': {
+              templateUrl: 'routing-about/about.view.html',
+              controller: 'AboutPageController',
+              controllerAs: 'about'
+            }
           }
         })
         .state('error',{

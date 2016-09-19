@@ -6,7 +6,7 @@ angular.
   module('subPage').
   controller('SubPageController', [
     function () {
-       this.name="subPage";
+      this.name="subPage";
   }]);
 
 
