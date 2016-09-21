@@ -1,12 +1,13 @@
 'use strict';
 
-// Register MainPageController
+// Register SubPageController
 
 angular.
   module('subPage').
   controller('SubPageController', [
     function () {
       this.name="subPage";
+      this.format = "d MMMM yyyy h:mm:ss:sss a Z";
   }]);
 
 

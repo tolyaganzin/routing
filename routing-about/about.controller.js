@@ -1,6 +1,6 @@
 'use strict';
 
-// Register MainPageController
+// Register AboutPageController
 
 angular.
   module('aboutPage').
