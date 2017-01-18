@@ -1,4 +1,4 @@
-### Routing with ui-router (angular-material)
+# Routing with ui-router (angular-material)
 ```
 bower install
 npm install
@@ -6,7 +6,7 @@ npm install
 The simple app with routing:
 -main paiges
 -sub pages
-##Nginx config
+## Nginx config
 ```
 server {
 	#listen 80 default_server;
@@ -42,4 +42,6 @@ server {
 	#}
 }
 ```
-### Look my next better app with Angular JS and yii2 (full rest api): https://github.com/tolyaganzin/angular-yii2
+# Look next my app wit Angular JS:
+- bootstrap backend full rest api yii2: https://github.com/tolyaganzin/angular-yii2
+- electron bootstrap (descktop): https://github.com/tolyaganzin/Tolya-electron
